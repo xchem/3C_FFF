@@ -1,0 +1,126 @@
+{
+  "7gp9-a": {},
+  "7gq4-a": {},
+  "7gok-a": {},
+  "7gol-a": {
+    "[Xe]C1CCOC1": [
+      "NC(=O)[Xe]"
+    ],
+    "[Xe]C1CCCO1": [
+      "C[Xe]",
+      "[Xe]c1cnns1"
+    ]
+  },
+  "7gp2-a": {
+    "[Xe]N1CCCCC1": [
+      "O[Xe]"
+    ],
+    "[Xe]C1CCNCC1": [
+      "CS(=O)(=O)[Xe]"
+    ]
+  },
+  "7gpf-a": {
+    "[Xe]C1CCCN1": [],
+    "[Xe]c1ccccn1": [
+      "O=CN[Xe]",
+      "C[Xe]"
+    ]
+  },
+  "7gox-a": {
+    "[Xe]c1ccccc1": [
+      "C[Xe]",
+      "O[Xe]"
+    ],
+    "CCC(=O)N[Xe]": [
+      "C[Xe]",
+      "O[Xe]"
+    ]
+  },
+  "7goy-a": {
+    "[Xe]c1ccon1": [
+      "C[Xe]"
+    ],
+    "COC(=O)CNC(=O)[Xe]": [
+      "C[Xe]"
+    ],
+    "[Xe]c1ccno1": []
+  },
+  "7gpm-a": {
+    "[Xe]C1CCCN1": [],
+    "CC(C)[Xe]": []
+  },
+  "7gqf-a": {},
+  "7gqh-a": {
+    "O=C1OC([Xe])Oc2ccccc21": [
+      "Br[Xe]",
+      "O[Xe]",
+      "C[Xe]"
+    ],
+    "O=C1OCOc2ccc([Xe])cc21": [
+      "C[Xe]",
+      "O[Xe]"
+    ],
+    "O=C1OCOc2cc([Xe])ccc21": [
+      "Br[Xe]",
+      "C[Xe]"
+    ]
+  },
+  "7go2-a": {},
+  "7gpk-a": {
+    "[Xe]C1CCNCC1": [
+      "C[Xe]"
+    ],
+    "[Xe]N1CCCCC1": [
+      "O[Xe]"
+    ],
+    "[Xe]c1ccsc1": []
+  },
+  "B0436a": {},
+  "B0439a": {},
+  "B0446a": {
+    "CN(C)C(=O)NCC[Xe]": [],
+    "[Xe]c1ccccc1": [
+      "[Xe]n1cnnc1"
+    ],
+    "CCNC(=O)N(C)C[Xe]": [
+      "[Xe]n1cnnc1"
+    ]
+  },
+  "B0450a": {},
+  "B0454a": {
+    "CN(C)C(=O)C[Xe]": [],
+    "[Xe]c1ccccc1": [
+      "[Xe]n1cnnc1"
+    ],
+    "CC(=O)N(C)C[Xe]": [
+      "[Xe]n1cnnc1"
+    ]
+  },
+  "B0455a": {},
+  "B0525a": {},
+  "B0691a": {},
+  "B0723a": {},
+  "B0738a": {},
+  "B0742a": {},
+  "B0805a": {},
+  "B0839a": {},
+  "B0857a": {},
+  "B0875a": {},
+  "B0914a": {},
+  "B0931a": {},
+  "B0938a": {},
+  "B1020a": {},
+  "B1219a": {},
+  "B1264a": {},
+  "B1307a": {
+    "O=c1ccnc([Xe])[nH]1": [],
+    "[Xe]c1ccns1": []
+  },
+  "B1361a": {},
+  "B1368a": {},
+  "B1456a": {},
+  "B1457a": {},
+  "B1460a": {},
+  "B1462a": {},
+  "B1463a": {}
+}
