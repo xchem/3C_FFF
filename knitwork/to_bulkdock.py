@@ -38,7 +38,13 @@ def create_bulkdock_inputs(subdir: str):
 
             elif len(hit_names) == 4:
                 hit_names = [f"{hit_names[0]}-{hit_names[1]}", f"{hit_names[2]}-{hit_names[3]}"]
-                            
+            elif len(hit_names) == 3:
+                if len(hit_names[2]) == 1:
+                    hit_names = [hit_names[0], f"{hit_names[1]}-{hit_names[2]}"]
+                elif len(hit_names[1]) == 1:
+                    hit_names = [f"{hit_names[0]}-{hit_names[1]}", hit_names[2]]
+                else:
+                    raise NotImplementedError(f"Wrong number of dashes in merge name: {merge_name}")
             else:
                 raise NotImplementedError(f"Wrong number of dashes in merge name: {merge_name}")
 
