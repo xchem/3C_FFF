@@ -48,7 +48,7 @@ This will create outputs in the chosen iter1 subdirectory:
 - `output.sdf`: fragmenstein merge ligand conformers
 - `output.csv`: fragmenstein merge metadata
 
-- [ ] placement with bulkdock
+- [x] placement with bulkdock
 
 ```bash
 cp -v iter1_fstein_bulkdock_input.csv $BULK/INPUTS/D68EV3C_iter1_fstein.csv
@@ -71,13 +71,13 @@ watch python -m bulkdock status
 - [ ] export Fragalysis SDF
 
 ```bash
-sbatch --job-name "D68EV3C_iter1_fstein_out" $HOME2/slurm/run_python.sh -m bulkdock to-fragalysis D68EV3C OUTPUTS/SDF_FILE iter1_fstein
+python -m bulkdock to-fragalysis D68EV3C OUTPUTS/D68EV3C_iter1_fstein_combined.sdf iter1_fstein
 ```
 
 - [ ] Copy back to this repository
 
 ```bash
-cd - OUTPUTS/SDF_FILE
+cd -
 cp -v $BULK/OUTPUTS/D68EV3C_iter1*fstein*fragalysis.sdf .
 ```
 
@@ -85,19 +85,19 @@ cp -v $BULK/OUTPUTS/D68EV3C_iter1*fstein*fragalysis.sdf .
 
 Running Fragment Knitting currently requires access to a specific VM known as `graph-sw-2`. If you don't have access, skip this section
 
-- [ ] `git add`, `commit` and `push` the contents of `aligned_files` and `knitwork` to the repository
-- [ ] `git clone` the repository on `graph-sw-2`
-- [ ] navigate to the `knitwork` subdirectory
+- [x] `git add`, `commit` and `push` the contents of `aligned_files` and `knitwork` to the repository
+- [x] `git clone` the repository on `graph-sw-2`
+- [x] navigate to the `knitwork` subdirectory
 
 Then, for each merging hypothesis:
 
-- [ ] Run the "fragment" step of FragmentKnitwork: `./run_fragment.sh iter1`
-- [ ] Run the pure "knitting" step of FragmentKnitwork: `./run_knitwork_pure.sh iter1`
-- [ ] Run the impure "knitting" step of FragmentKnitwork: `./run_knitwork_impure.sh iter1`
-- [ ] Create the BulkDock inputs: `python to_bulkdock.py iter1`
-- [ ] `git add`, `commit` and `push` the CSVs created by the previous step
-- [ ] back on `cepheus-slurm` pull the latest changes
-- [ ] Run BulkDock placement as for Fragmenstein above
+- [x] Run the "fragment" step of FragmentKnitwork: `./run_fragment.sh iter1`
+- [x] Run the pure "knitting" step of FragmentKnitwork: `./run_knitwork_pure.sh iter1`
+- [x] Run the impure "knitting" step of FragmentKnitwork: `./run_knitwork_impure.sh iter1`
+- [x] Create the BulkDock inputs: `python to_bulkdock.py iter1`
+- [x] `git add`, `commit` and `push` the CSVs created by the previous step
+- [x] back on `cepheus-slurm` pull the latest changes
+- [x] Run BulkDock placement as for Fragmenstein above
 
 ```bash
 cp -v iter1_knitwork_pure.csv $BULK/INPUTS/D68EV3C_iter1_knitwork_pure.csv
@@ -112,6 +112,12 @@ python -m bulkdock place D68EV3C INPUTS/D68EV3C_iter1_knitwork_impure.csv
 **CREATE NOTEBOOK**
 
 - [ ] Export Fragalysis SDF as for Fragmenstein
+
+```bash
+cd $BULK
+python -m bulkdock to-fragalysis D68EV3C OUTPUTS/D68EV3C_iter1_knitwork_pure_combined.sdf iter1_knit_pure
+python -m bulkdock to-fragalysis D68EV3C OUTPUTS/D68EV3C_iter1_knitwork_impure_combined.sdf iter1_knit_impure
+```
 
 ## 4. Scaffold selection
 
